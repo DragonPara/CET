@@ -4,6 +4,10 @@ study tool
 # run
 `python heart.py`
 
+如果不小心删掉了p1.json中的东西
+首先`python adjust.py`
+再'python heart.py'
+
 +是功能控制符，可以控制是否在输入之前显示意思，也可以控制首字母
 
 如 +a则只显示以a为首字母的单词
