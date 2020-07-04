@@ -1428,5 +1428,5 @@ xerox vt.& vi.用静电复印 X-ray n.X射线 yacht n.游艇，快艇 yawn n.&vi
 yearly a.&adj.每年（的） yearn vi.想念，怀念，向往 yeast n.酵母 yield vi.屈服
 yoke n.轭，牛轭；枷锁 yolk n.蛋黄，卵黄
 youngster n.儿童，少年，年轻人 youngster n.青年
-zinc n.锌vt.在…上镀锌
+zinc n.锌 vt.在…上镀锌
 end n.结束 

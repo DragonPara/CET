@@ -14,11 +14,11 @@ def first(firstWord,words,words_cp):
             print("单词：",word)
             print("翻译：",words[word],"\n")
             value=input("")
-        if len(value)>0:
-            if value=="exit":
+        if len(value)>0:# 若不加此判断，当word[0]!=first时，下方value[0]会越界
+            if value=="exit":# 退出
                 print("欢迎下次使用")
                 break
-            if value[0]=="+":
+            if value[0]=="+":# 判断是否采用控制
                 if value=="+yisi":
                     withYisi(words,words_cp)
                 else :
@@ -28,7 +28,7 @@ def withYisi(words,words_cp):
     while(1):
         if words_cp==[]:
             print("\n你已完成一次复习\n")
-            words_cp = list(words)
+            words_cp = list(words)#重新初始化
         word=random.sample(words_cp,1)
         word=str(word[0])
         words_cp.remove(word)
@@ -52,9 +52,9 @@ with open("p1.json","r",encoding="utf8")as fp:
         if words_cp==[]:
             print("\n你已完成一次复习\n")
             words_cp = list(words)
-        word=random.sample(words_cp,1)
+        word=random.sample(words_cp,1)# 随机选一个单词
         word=str(word[0])
-        words_cp.remove(word)
+        words_cp.remove(word)# 防止同一个单词被多次选中
         print("单词：",word)
         value=input("")
         print("翻译：",words[word],"\n")
