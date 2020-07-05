@@ -45,7 +45,13 @@ def withYisi(words,words_cp):
                 else :
                     first(value[1],words,words_cp)
 print("四六级词汇复习\n")
+count=0
 with open("p1.json","r",encoding="utf8")as fp:
+    count+=1
+    if count%100==0:
+        print("本次已复习",count,"个单词")
+        for i in range(5):
+            print("*"*i)
     words=json.load(fp)
     words_cp = list(words)
     while(1):
